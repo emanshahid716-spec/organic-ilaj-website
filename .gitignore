@@ -8,10 +8,14 @@ server/node_modules/
 
 # Local order/message data (JSON file storage) — this is your store's live
 # data, not code. Don't overwrite the live server's data by pushing this.
+<<<<<<< HEAD
 # (products.json is NOT excluded — it's the backend's product catalog and
 # must be committed so checkout can validate items against it.)
 server/data/orders.json
 server/data/messages.json
+=======
+server/data/*.json
+>>>>>>> 1dffbd8a48035f57c0610a01d008fa2fb052c8df
 
 # OS/editor junk
 .DS_Store
