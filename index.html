@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <script>document.documentElement.classList.remove("no-js");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organic Ilaj | Premium Organic Health Supplements</title>
+  <meta name="description" content="Organic Ilaj offers 100% natural, lab-tested health supplements.">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+ 
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero-premium.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+ 
+  <div class="announcement-bar">
+    <div class="container">
+      <span>🌿 100% Organic &amp; Herbal</span>
+      <span>🚚 Free Delivery All Over Pakistan</span>
+      <span>💵 Cash on Delivery Available</span>
+    </div>
+  </div>
+ 
+  <header id="site-header">
+    <div class="container navbar-inner">
+ 
+      <!-- Logo -->
+      <a href="index.html" class="navbar-logo">
+        <img src="images/logo.png" alt="Organic Ilaj Logo" class="navbar-logo-img">
+      </a>
+ 
+      <!-- Main Menu (desktop) -->
+      <nav class="navbar-menu" id="navbar-menu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+ 
+      <!-- Inline Search (desktop) -->
+      <div class="navbar-search" id="navbar-search-box">
+        <input type="text" id="navbar-search-input" placeholder="Search products..." autocomplete="off">
+        <button class="navbar-search-btn" id="nav-search-btn" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Icons -->
+      <div class="navbar-icons">
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </button>
+ 
+        <a class="icon-btn" href="cart.html" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+ 
+        <button class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+ 
+        <!-- Hamburger (mobile only) -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+ 
+    </div>
+  </header>
+
+  <!-- Global Search Overlay -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-overlay-inner">
+      <button class="search-overlay-close" id="search-overlay-close" aria-label="Close search">&times;</button>
+      <div class="search-box">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="global-search-input" placeholder="Search for products, e.g. \'weight loss\', \'height\'..." autocomplete="off">
+      </div>
+      <div class="search-results" id="global-search-results"></div>
+    </div>
+  </div>
+
+ 
+  <main>
+    <section id="hero" class="hero-premium">
+      <!-- Decorative background: soft gradients, blobs, leaf motifs -->
+      <div class="hero-premium-bg" aria-hidden="true">
+        <div class="hp-blob hp-blob-1"></div>
+        <div class="hp-blob hp-blob-2"></div>
+        <div class="hp-dot-pattern"></div>
+
+        <svg class="hp-leaf-1" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="color:#1B5E20;">
+          <path d="M20 220 C60 160 90 120 140 40" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="70" cy="165" rx="22" ry="12" fill="currentColor" transform="rotate(-40 70 165)"/>
+          <ellipse cx="100" cy="120" rx="24" ry="13" fill="currentColor" transform="rotate(-35 100 120)"/>
+          <ellipse cx="125" cy="75" rx="22" ry="12" fill="currentColor" transform="rotate(-30 125 75)"/>
+          <ellipse cx="140" cy="40" rx="20" ry="11" fill="currentColor" transform="rotate(-20 140 40)"/>
+        </svg>
+        <svg class="hp-leaf-2" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="color:#F9A826;">
+          <path d="M20 220 C60 160 90 120 140 40" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="70" cy="165" rx="22" ry="12" fill="currentColor" transform="rotate(-40 70 165)"/>
+          <ellipse cx="100" cy="120" rx="24" ry="13" fill="currentColor" transform="rotate(-35 100 120)"/>
+          <ellipse cx="125" cy="75" rx="22" ry="12" fill="currentColor" transform="rotate(-30 125 75)"/>
+        </svg>
+        <svg class="hp-leaf-3" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" style="color:#1B5E20;">
+          <path d="M20 220 C60 160 90 120 140 40" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+          <ellipse cx="70" cy="165" rx="22" ry="12" fill="currentColor" transform="rotate(-40 70 165)"/>
+          <ellipse cx="125" cy="75" rx="22" ry="12" fill="currentColor" transform="rotate(-30 125 75)"/>
+        </svg>
+      </div>
+
+      <div class="container hero-premium-inner">
+
+        <!-- Left: content -->
+        <div class="hero-premium-content">
+          <span class="hp-eyebrow">100% Natural &amp; Lab Tested</span>
+
+          <h1>Nourish Your Body, <br>Naturally.</h1>
+
+          <p class="hp-desc">
+            Organic Ilaj brings you doctor-recommended herbal supplements —
+            crafted from nature, trusted by families across Pakistan.
+          </p>
+
+          <div class="hero-premium-cta">
+            <a href="shop.html" class="hp-btn hp-btn-primary">Shop Now</a>
+            <a href="about.html" class="hp-btn hp-btn-secondary">Learn More</a>
+          </div>
+
+          <div class="hero-premium-badges">
+            <div class="hp-badge">
+              <span class="hp-badge-icon">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <span>Doctor<br>Recommended</span>
+            </div>
+            <div class="hp-badge">
+              <span class="hp-badge-icon">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"/></svg>
+              </span>
+              <span>Lab<br>Tested</span>
+            </div>
+            <div class="hp-badge">
+              <span class="hp-badge-icon">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 2 L4 6 v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6z"/></svg>
+              </span>
+              <span>100% Natural<br>Ingredients</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: floating premium product showcase -->
+        <div class="hero-premium-showcase">
+          <div class="hp-stage-ring" aria-hidden="true"></div>
+          <div class="hp-glow" aria-hidden="true"></div>
+
+          <div class="hp-rating-chip">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26 6.9.6-5.2 4.6 1.6 6.77L12 16.9l-6.2 3.33 1.6-6.77-5.2-4.6 6.9-.6z"/></svg>
+            <strong>4.9 · 15K+ Customers</strong>
+          </div>
+
+          <!-- Main featured product: Camel + Ostrich Oil -->
+          <div class="hp-main-product">
+            <img src="images/live_camstrich_oil_clean.png" alt="Organic Ilaj Camstrich - Camel and Ostrich Oil for joint and muscle pain">
+          </div>
+
+          <!-- Four floating cream jars -->
+          <div class="hp-card hp-card-1">
+            <img src="images/live_blood_pressure-tight.png" alt="Organic Ilaj Blood Pressure Control Cream">
+          </div>
+          <div class="hp-card hp-card-2">
+            <img src="images/live_height_weight_booster-tight.png" alt="Organic Ilaj Kids Health Booster Cream">
+          </div>
+          <div class="hp-card hp-card-3">
+            <img src="images/live_bio_lady_wellness-tight.png" alt="Organic Ilaj Bio Lady Wellness Cream">
+          </div>
+          <div class="hp-card hp-card-4">
+            <img src="images/live_bio_sugar_control-tight.png" alt="Organic Ilaj Bio Sugar Control Cream">
+          </div>
+
+          <!-- Two more herbal formulas as equal-weight supporting cards -->
+          <div class="hp-card hp-card-5">
+            <img src="images/live_weight_loss-tight.png" alt="Organic Ilaj Weight Loss Formula">
+          </div>
+          <div class="hp-card hp-card-6">
+            <img src="images/live_stomach_coolant-tight.png" alt="Organic Ilaj Stomach Coolant">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats-strip-inner">
+        <div class="stats-strip-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <div><strong>15K+</strong><span>Happy Customers</span></div>
+        </div>
+        <div class="stats-strip-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 L4 6 v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6z"/></svg>
+          <div><strong>100%</strong><span>Natural Products</span></div>
+        </div>
+        <div class="stats-strip-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.26 6.9.6-5.2 4.6 1.6 6.77L12 16.9l-6.2 3.33 1.6-6.77-5.2-4.6 6.9-.6z"/></svg>
+          <div><strong>4.9★</strong><span>Customer Rating</span></div>
+        </div>
+        <div class="stats-strip-item">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="1" y="6" width="15" height="12"/><path d="M16 10h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="18.5" cy="18.5" r="1.8"/></svg>
+          <div><strong>Fast</strong><span>Delivery</span></div>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="category-icons" class="section" style="padding-bottom:0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Shop By Category</span>
+          <h2>Shop by Categories</h2>
+        </div>
+
+        <div class="cat-icon-row">
+          <a href="product.html?slug=bio-lady-wellness-cream" class="cat-icon-item">
+            <div class="cat-icon-circle" style="background-color:#E8F3E9;">
+              <img src="images/live_bio_lady_wellness.png" alt="Creams">
+            </div>
+            <span>Creams</span>
+          </a>
+          <a href="product.html?slug=camstrich-oil-100" class="cat-icon-item">
+            <div class="cat-icon-circle" style="background-color:#E8F3E9;">
+              <img src="images/live_camstrich_oil.png" alt="Oils">
+            </div>
+            <span>Oils</span>
+          </a>
+          <a href="product.html?slug=height-weight-booster-100" class="cat-icon-item">
+            <div class="cat-icon-circle" style="background-color:#E8F3E9;">
+              <img src="images/live_height_weight_booster.png" alt="Height & Weight Booster">
+            </div>
+            <span>Height Booster</span>
+          </a>
+          <a href="product.html?slug=weight-loss-100" class="cat-icon-item">
+            <div class="cat-icon-circle" style="background-color:#E8F3E9;">
+              <img src="images/live_weight_loss.png" alt="Weight Loss">
+            </div>
+            <span>Weight Loss</span>
+          </a>
+          <a href="product.html?slug=stomach-coolant-100" class="cat-icon-item">
+            <div class="cat-icon-circle" style="background-color:#E8F3E9;">
+              <img src="images/live_stomach_coolant.png" alt="Stomach Coolant">
+            </div>
+            <span>Stomach Coolant</span>
+          </a>
+          <a href="shop.html" class="cat-icon-item">
+            <div class="cat-icon-circle" style="background-color:#E8F3E9;">
+              <img src="images/live_bio_sugar_control.png" alt="All Products">
+            </div>
+            <span>All Products</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Shop By Need</span>
+          <h2>Explore Our Categories</h2>
+          <p>Handpicked natural solutions for every stage of your wellness journey.</p>
+        </div>
+ 
+        <div class="categories-grid">
+          <a href="product.html?slug=bio-lady-wellness-cream" class="category-card reveal">
+            <div class="category-img" style="background-color:#E8F3E9;">
+              <img src="images/live_bio_lady_wellness.png" alt="Bio Lady Wellness Cream">
+            </div>
+            <h4>Bio Lady Wellness</h4>
+            <span class="category-link">Shop Now →</span>
+          </a>
+ 
+          <a href="product.html?slug=camstrich-oil-100" class="category-card reveal">
+            <div class="category-img" style="background-color:#E8F3E9;">
+              <img src="images/live_camstrich_oil.png" alt="Camstrich Oil">
+            </div>
+            <h4>Camstrich Oil</h4>
+            <span class="category-link">Shop Now →</span>
+          </a>
+ 
+          <a href="product.html?slug=height-weight-booster-100" class="category-card reveal">
+            <div class="category-img" style="background-color:#E8F3E9;">
+              <img src="images/live_height_weight_booster.png" alt="Height & Weight Booster">
+            </div>
+            <h4>Height & Weight Booster</h4>
+            <span class="category-link">Shop Now →</span>
+          </a>
+ 
+          <a href="product.html?slug=weight-loss-100" class="category-card reveal">
+            <div class="category-img" style="background-color:#E8F3E9;">
+              <img src="images/live_weight_loss.png" alt="Weight Loss">
+            </div>
+            <h4>Weight Loss</h4>
+            <span class="category-link">Shop Now →</span>
+          </a>
+ 
+          <a href="product.html?slug=stomach-coolant-100" class="category-card reveal">
+            <div class="category-img" style="background-color:#E8F3E9;">
+              <img src="images/live_stomach_coolant.png" alt="Stomach Coolant">
+            </div>
+            <h4>Stomach Coolant</h4>
+            <span class="category-link">Shop Now →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="featured-products" class="section" style="background-color: var(--color-light-gray);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Handpicked For You</span>
+          <h2>Featured Products</h2>
+          <p>Our most trusted formulations, backed by science and nature both.</p>
+        </div>
+ 
+        <div class="products-grid">
+ 
+          <!-- Product Card 1 -->
+          <!-- Product Card 4 -->
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-primary">Best Seller</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=bio-lady-wellness-cream">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/boxfrontnaaf.png?width=900" alt="Bio Lady Wellness Cream">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=bio-lady-wellness-cream">Bio Lady Wellness Cream</a></h4>
+              <p class="product-desc">Natural formula crafted to support women's daily health &amp; wellness.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(176)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 2,499</span>
+                <span class="price-old">Rs. 3,499</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-primary">New</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=bio-sugar-control-cream">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/front_bio_sugar_control_for_website_copy.png?width=900" alt="Bio Sugar Control Cream">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=bio-sugar-control-cream">Bio Sugar Control Cream</a></h4>
+              <p class="product-desc">Natural formula to help maintain a healthy blood sugar level.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(84)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 2,999</span>
+                <span class="price-old">Rs. 3,999</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-danger">-10%</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=blood-pressure-control-cream">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/000001.png?width=900" alt="Blood Pressure Control Cream">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=blood-pressure-control-cream">Blood Pressure Control Cream</a></h4>
+              <p class="product-desc">Natural formula to help your body resist blood pressure problems.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(62)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 2,499</span>
+                <span class="price-old">Rs. 3,499</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-danger">-15%</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=camstrich-oil-100">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/glassybottle100ml_fc992b75-d23f-49b1-b6e2-b787a08f5b57.png?width=900" alt="Camstrich Oil">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=camstrich-oil-100">Camstrich Oil</a></h4>
+              <p class="product-desc">Quick comfort for muscles &amp; joints — enhanced herbal oil blend.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(210)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 3,499</span>
+                <span class="price-old">Rs. 4,499</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+ 
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-danger">-20%</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=height-weight-booster-100">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/front_height_and_weight.png?width=900" alt="Height & Weight Booster">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=height-weight-booster-100">Height & Weight Booster</a></h4>
+              <p class="product-desc">Herbal formula to support natural height &amp; weight growth in children and teens.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(128)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 1,949</span>
+                <span class="price-old">Rs. 2,399</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+ 
+          <!-- Product Card 7 -->
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-primary">Popular</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=stomach-coolant-100">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/Stomachcoolant100g.png?width=900" alt="Stomach Coolant">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=stomach-coolant-100">Stomach Coolant</a></h4>
+              <p class="product-desc">Pure herbal blend to soothe acidity, heartburn, and digestive discomfort.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(152)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 1,999</span>
+                <span class="price-old">Rs. 2,399</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>          <!-- Product Card 2 -->
+          <div class="product-card reveal">
+            <div class="product-badges">
+              <span class="badge badge-primary">Best Seller</span>
+            </div>
+            <button class="wishlist-btn" aria-label="Add to wishlist">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </button>
+            <a href="product.html?slug=weight-loss-100">
+              <div class="product-img" style="background-color:#E8F3E9;">
+                <img src="https://www.organicilaj.com/cdn/shop/files/weight_loss.png?width=900" alt="Weight Loss Formula">
+                <button class="quick-view-btn">Quick View</button>
+              </div>
+            </a>
+ 
+            <div class="product-info">
+              <h4><a href="product.html?slug=weight-loss-100">Weight Loss Formula</a></h4>
+              <p class="product-desc">Chemical-free herbal formula to support healthy, natural weight loss.</p>
+              <div class="product-rating">
+                ★★★★★ <span>(94)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">Rs. 1,949</span>
+                <span class="price-old">Rs. 2,399</span>
+              </div>
+              <button class="btn btn-primary add-to-cart-btn">Add to Cart</button>
+            </div>
+          </div>
+ 
+
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <section id="benefits" class="section">
+      <div class="container">
+        <div class="benefits-grid">
+ 
+          <div class="benefit-item reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2 L4 6 v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h5>100% Organic</h5>
+            <p>Pure herbal ingredients, no synthetic fillers.</p>
+          </div>
+ 
+          <div class="benefit-item reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="1" y="7" width="15" height="10" rx="2"></rect>
+                <path d="M16 10h3l3 3v4h-6z"></path>
+                <circle cx="5.5" cy="19.5" r="1.5"></circle>
+                <circle cx="18.5" cy="19.5" r="1.5"></circle>
+              </svg>
+            </div>
+            <h5>Fast Delivery</h5>
+            <p>Nationwide shipping within 2-4 business days.</p>
+          </div>
+ 
+          <div class="benefit-item reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <h5>Cash on Delivery</h5>
+            <p>Pay easily when your order arrives.</p>
+          </div>
+ 
+          <div class="benefit-item reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M9 2h6v4H9z"></path>
+                <path d="M8 6h8l1 5a5 5 0 0 1-10 0z"></path>
+                <path d="M9 15v3a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-3"></path>
+              </svg>
+            </div>
+            <h5>Doctor Recommended</h5>
+            <p>Formulated with guidance from certified physicians.</p>
+          </div>
+ 
+          <div class="benefit-item reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M10 2v6.5L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 8.5V2"></path>
+                <line x1="8.5" y1="2" x2="15.5" y2="2"></line>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+              </svg>
+            </div>
+            <h5>Lab Tested</h5>
+            <p>Every batch verified for purity and safety.</p>
+          </div>
+ 
+          <div class="benefit-item reveal">
+            <div class="benefit-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2 L4 6 v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6z"></path>
+                <text x="12" y="15" font-size="9" text-anchor="middle" fill="currentColor" stroke="none">₨</text>
+              </svg>
+            </div>
+            <h5>Money Back Guarantee</h5>
+            <p>Not satisfied? Get a full refund, no questions asked.</p>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+    <section id="best-sellers" class="section" style="background-color: var(--color-primary-dark);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" style="color: var(--color-gold);">Customer Favorites</span>
+          <h2 style="color: var(--color-white);">Our Best Sellers</h2>
+          <p style="color: #C8D6C9;">The products our community keeps coming back for.</p>
+        </div>
+ 
+        <div class="bestseller-scroll">
+ 
+          <div class="bestseller-card reveal">
+            <div class="bestseller-rank">01</div>
+            <div class="bestseller-img" style="background-color:#E8F3E9;">
+              <img src="https://www.organicilaj.com/cdn/shop/files/boxfrontnaaf.png?width=900" alt="Bio Lady Wellness Cream">
+            </div>
+            <div class="bestseller-info">
+              <h5><a href="product.html?slug=bio-lady-wellness-cream" style="color:inherit;">Bio Lady Wellness Cream</a></h5>
+              <div class="product-rating">★★★★★ <span style="color:#C8D6C9;">(176)</span></div>
+              <span class="price-current" style="color: var(--color-gold);">Rs. 2,499</span>
+            </div>
+          </div>
+ 
+          <div class="bestseller-card reveal">
+            <div class="bestseller-rank">02</div>
+            <div class="bestseller-img" style="background-color:#E8F3E9;">
+              <img src="https://www.organicilaj.com/cdn/shop/files/glassybottle100ml_fc992b75-d23f-49b1-b6e2-b787a08f5b57.png?width=900" alt="Camstrich Oil">
+            </div>
+            <div class="bestseller-info">
+              <h5><a href="product.html?slug=camstrich-oil-100" style="color:inherit;">Camstrich Oil</a></h5>
+              <div class="product-rating">★★★★★ <span style="color:#C8D6C9;">(210)</span></div>
+              <span class="price-current" style="color: var(--color-gold);">Rs. 3,499</span>
+            </div>
+          </div>
+ 
+          <div class="bestseller-card reveal">
+            <div class="bestseller-rank">03</div>
+            <div class="bestseller-img" style="background-color:#E8F3E9;">
+              <img src="https://www.organicilaj.com/cdn/shop/files/front_height_and_weight.png?width=900" alt="Height & Weight Booster">
+            </div>
+            <div class="bestseller-info">
+              <h5><a href="product.html?slug=height-weight-booster-100" style="color:inherit;">Height & Weight Booster</a></h5>
+              <div class="product-rating">★★★★★ <span style="color:#C8D6C9;">(128)</span></div>
+              <span class="price-current" style="color: var(--color-gold);">Rs. 1,949</span>
+            </div>
+          </div>
+ 
+          <div class="bestseller-card reveal">
+            <div class="bestseller-rank">04</div>
+            <div class="bestseller-img" style="background-color:#E8F3E9;">
+              <img src="https://www.organicilaj.com/cdn/shop/files/weight_loss.png?width=900" alt="Weight Loss Formula">
+            </div>
+            <div class="bestseller-info">
+              <h5><a href="product.html?slug=weight-loss-100" style="color:inherit;">Weight Loss Formula</a></h5>
+              <div class="product-rating">★★★★★ <span style="color:#C8D6C9;">(94)</span></div>
+              <span class="price-current" style="color: var(--color-gold);">Rs. 1,949</span>
+            </div>
+          </div>
+ 
+          <div class="bestseller-card reveal">
+            <div class="bestseller-rank">05</div>
+            <div class="bestseller-img" style="background-color:#E8F3E9;">
+              <img src="https://www.organicilaj.com/cdn/shop/files/Stomachcoolant100g.png?width=900" alt="Stomach Coolant">
+            </div>
+            <div class="bestseller-info">
+              <h5><a href="product.html?slug=stomach-coolant-100" style="color:inherit;">Stomach Coolant</a></h5>
+              <div class="product-rating">★★★★★ <span style="color:#C8D6C9;">(152)</span></div>
+              <span class="price-current" style="color: var(--color-gold);">Rs. 1,999</span>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <section id="testimonials" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">What People Say</span>
+          <h2>Loved By Our Customers</h2>
+          <p>Real stories from real families who trust Organic Ilaj.</p>
+        </div>
+ 
+        <div class="testimonial-track-wrapper">
+          <div class="testimonial-track">
+ 
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "My son has been using the Height & Weight Booster for 3 months and we've already noticed a real difference in his energy and growth. No side effects, and it's gentle on his skin."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background-color:#E8F3E9;">
+                  <img src="https://www.organicilaj.com/cdn/shop/files/frontkidshealthboostercreamfront.png?width=900" alt="Ayesha R.">
+                </div>
+                <div>
+                  <h6>Ayesha R.</h6>
+                  <span>Lahore</span>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Cash on delivery made it so easy to trust them for the first order. The Camstrich Oil genuinely eased my knee joint pain within weeks. Repeat customer now."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background-color:#E8F3E9;">
+                  <img src="https://www.organicilaj.com/cdn/shop/files/glassybottle100ml_fc992b75-d23f-49b1-b6e2-b787a08f5b57.png?width=900" alt="Bilal K.">
+                </div>
+                <div>
+                  <h6>Bilal K.</h6>
+                  <span>Karachi</span>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "As a pharmacist myself, I appreciate that they list every ingredient clearly and their lab reports are available on request. Rare to find that level of transparency."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background-color:#E8F3E9;">
+                  <img src="https://www.organicilaj.com/cdn/shop/files/boxfrontnaaf.png?width=900" alt="Dr. Sana M.">
+                </div>
+                <div>
+                  <h6>Dr. Sana M.</h6>
+                  <span>Islamabad</span>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Delivery was faster than expected and the packaging felt premium. The Weight Loss Formula arrived well sealed and protected. Will definitely be ordering again."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background-color:#E8F3E9;">
+                  <img src="https://www.organicilaj.com/cdn/shop/files/weight_loss.png?width=900" alt="Fatima A.">
+                </div>
+                <div>
+                  <h6>Fatima A.</h6>
+                  <span>Faisalabad</span>
+                </div>
+              </div>
+            </div>
+ 
+            <!-- Duplicate first 2 cards for seamless infinite loop -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "My son has been using the Height & Weight Booster for 3 months and we've already noticed a real difference in his energy and growth. No side effects, and it's gentle on his skin."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background-color:#E8F3E9;">
+                  <img src="https://www.organicilaj.com/cdn/shop/files/frontkidshealthboostercreamfront.png?width=900" alt="Ayesha R.">
+                </div>
+                <div>
+                  <h6>Ayesha R.</h6>
+                  <span>Lahore</span>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Cash on delivery made it so easy to trust them for the first order. The Camstrich Oil genuinely eased my knee joint pain within weeks. Repeat customer now."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" style="background-color:#E8F3E9;">
+                  <img src="https://www.organicilaj.com/cdn/shop/files/glassybottle100ml_fc992b75-d23f-49b1-b6e2-b787a08f5b57.png?width=900" alt="Bilal K.">
+                </div>
+                <div>
+                  <h6>Bilal K.</h6>
+                  <span>Karachi</span>
+                </div>
+              </div>
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section">
+      <div class="container">
+        <div class="newsletter-box">
+          <div>
+            <span class="eyebrow" style="color: var(--color-gold);">Stay Connected</span>
+            <h2>Get 10% Off Your First Order</h2>
+            <p>Subscribe for wellness tips, new product launches, and exclusive discounts.</p>
+          </div>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+          <p class="newsletter-note" id="newsletter-msg"></p>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <footer id="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="navbar-logo">
+<img src="images/logo.png" alt="Organic Ilaj Logo" class="navbar-logo-img">
+</a>
+        <p>Premium, doctor-recommended organic supplements — crafted from nature, trusted by families across Pakistan.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/14ig4dyvSTN/" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.631.771-1.631 1.562v1.878h2.773l-.443 2.91h-2.33V22c4.78-.756 8.438-4.92 8.438-9.94z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/organicilaj?igsh=MWI2Y3d1d2gyMGV4YQ==" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/923025623002" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.46-2.39-1.48-.88-.78-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.86.5 3.65 1.45 5.2L2 22l4.9-1.42A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18a8.02 8.02 0 0 1-4.09-1.12l-.29-.17-3.03.87.88-2.95-.19-.3A8.01 8.01 0 1 1 12 20z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@organicilaj" aria-label="TikTok" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16.5 2h-2.9v13.4c0 1.4-1.13 2.5-2.5 2.5a2.5 2.5 0 0 1 0-5c.2 0 .4.02.6.06V9.9a5.4 5.4 0 1 0 4.8 5.37V8.6a7.12 7.12 0 0 0 3.6 1.02V6.52A4.2 4.2 0 0 1 16.5 2.3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h6>Categories</h6>
+        <ul>
+          <li><a href="shop.html">Height & Weight Booster</a></li>
+          <li><a href="shop.html?category=Weight%20Loss%20Formula">Weight Loss</a></li>
+          <li><a href="shop.html?category=Camstrich%20Oil">Camstrich Oil</a></li>
+          <li><a href="shop.html?category=Bio%20Lady%20Wellness%20Cream">Bio Lady Wellness</a></li>
+          <li><a href="shop.html?category=Stomach%20Coolant">Stomach Coolant</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h6>Policies</h6>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h6>Contact Us</h6>
+        <ul class="footer-contact">
+          <li>📍 Pakpattan Chowk, Near Bulbul Hotel, Sahiwal, Punjab, Pakistan</li>
+          <li>📞 0302-5623002</li>
+          <li>✉️ organicilaj@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Organic Ilaj. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+ 
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/hero-premium.js"></script>
+  <a href="https://wa.me/923025623002" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.89 8.89 0 0 0-7.7 13.34L3 21l3.79-1.28a8.89 8.89 0 0 0 5.26 1.7h.01a8.89 8.89 0 0 0 8.87-8.87 8.83 8.83 0 0 0-2.33-6.23zM12.06 19.9a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.95.94-2.73-.18-.28a7.42 7.42 0 0 1 6.08-11.41 7.36 7.36 0 0 1 5.24 2.17 7.36 7.36 0 0 1 2.17 5.25 7.42 7.42 0 0 1-7.41 7.24zm4.06-5.56c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11-.66-.59-1.11-1.32-1.24-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.21-.69-1.65-.18-.44-.37-.38-.5-.38-.13-.01-.28-.01-.43-.01a.83.83 0 0 0-.6.28c-.2.22-.79.77-.79 1.87s.81 2.17.92 2.32c.11.15 1.6 2.44 3.87 3.42.54.23.96.37 1.29.48.54.17 1.03.15 1.42.09.43-.06 1.31-.54 1.5-1.06.18-.51.18-.95.13-1.05-.05-.1-.2-.16-.42-.27z"/></svg>
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Secrets — never upload these
+.env
+server/.env
+
+# Dependencies — reinstalled via `npm install`, no need to upload
+node_modules/
+server/node_modules/
+
+# Local order/message data (JSON file storage) — this is your store's live
+# data, not code. Don't overwrite the live server's data by pushing this.
+# (products.json is NOT excluded — it's the backend's product catalog and
+# must be committed so checkout can validate items against it.)
+server/data/orders.json
+server/data/messages.json
+
+# OS/editor junk
+.DS_Store
+Thumbs.db

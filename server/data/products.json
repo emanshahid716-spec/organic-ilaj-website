@@ -1,0 +1,586 @@
+[
+  {
+    "slug": "bio-lady-wellness-cream",
+    "name": "Bio Lady Wellness Cream",
+    "category": "Bio Lady Wellness",
+    "image": "images/live_bio_lady_wellness.png",
+    "gallery": [
+      "images/live_bio_lady_wellness.png",
+      "images/live_bio_lady_wellness.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2499,
+    "oldPrice": 3499,
+    "rating": 5,
+    "reviews": 176,
+    "badge": "Best Seller",
+    "shortDesc": "Natural formula crafted to support ladies' overall health and strength.",
+    "description": "Bio Lady Wellness Cream is a specially formulated herbal blend created to support women's everyday health, energy and inner balance. Modern routines, dietary gaps and daily stress can leave the body short on the nourishment it needs — this cream is designed to help fill that gap naturally.",
+    "benefits": [
+      "Supports overall women's health & wellness",
+      "Helps maintain daily energy and vitality",
+      "Supports hormonal & metabolic balance",
+      "Gentle, non-greasy, easy daily application",
+      "Made with herbal & natural ingredients",
+      "Suitable for regular, long-term use"
+    ],
+    "ingredients": "Herbal wellness blend with natural plant extracts, nourishing botanical oils and skin-friendly carriers. See product packaging for the full ingredient list.",
+    "howToUse": "Apply a small amount as directed on the label, or as advised by a health professional. For best results, pair with a balanced diet, good sleep and light regular activity.",
+    "warnings": "This product is not intended to diagnose, treat or cure any disease. Results may vary from person to person. Discontinue use if irritation occurs and consult a physician if you have an existing medical condition."
+  },
+  {
+    "slug": "bio-sugar-control-cream",
+    "name": "Bio Sugar Control Cream",
+    "category": "Bio Sugar Control",
+    "image": "images/live_bio_sugar_control.png",
+    "gallery": [
+      "images/live_bio_sugar_control.png",
+      "images/live_bio_sugar_control.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2999,
+    "oldPrice": 3999,
+    "rating": 5,
+    "reviews": 84,
+    "badge": "New",
+    "shortDesc": "Herbal formula to help maintain a healthy, natural blood sugar level.",
+    "description": "Bio Sugar Control Cream is a natural formula designed to support the body in maintaining a healthy blood sugar balance as part of an everyday wellness routine. It's built from herbal ingredients traditionally used to support metabolic wellbeing.",
+    "benefits": [
+      "Supports healthy, natural blood sugar balance",
+      "Supports daily metabolic wellness",
+      "Helps maintain steady everyday energy",
+      "Herbal, non-invasive daily formula",
+      "Easy to include in a daily routine",
+      "Free from harsh synthetic additives"
+    ],
+    "ingredients": "Herbal metabolic-support blend with natural extracts known for traditional use in sugar-balance wellness. See product packaging for the full ingredient list.",
+    "howToUse": "Apply as directed on the label, or as advised by a health professional. Best used consistently alongside a balanced, low-sugar diet and regular physical activity.",
+    "warnings": "This product is not a substitute for prescribed diabetes medication and does not diagnose, treat or cure any disease. Please consult your doctor before use if you are currently on medication for blood sugar management."
+  },
+  {
+    "slug": "blood-pressure-control-cream",
+    "name": "Blood Pressure Control Cream",
+    "category": "Blood Pressure Control",
+    "image": "images/live_blood_pressure.png",
+    "gallery": [
+      "images/live_blood_pressure.png",
+      "images/live_blood_pressure.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2499,
+    "oldPrice": 3499,
+    "rating": 5,
+    "reviews": 62,
+    "badge": "-29%",
+    "shortDesc": "Natural formula to help your body resist blood pressure problems.",
+    "description": "Blood Pressure Control Cream is an herbal formula created to support cardiovascular wellness and help the body maintain healthy circulation as part of a balanced lifestyle.",
+    "benefits": [
+      "Supports healthy blood pressure balance",
+      "Supports overall cardiovascular wellness",
+      "Encourages healthy circulation",
+      "Herbal formula for daily use",
+      "Complements an active, balanced lifestyle",
+      "Gentle, non-greasy application"
+    ],
+    "ingredients": "Herbal circulatory-support blend with natural botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Apply as directed on the label, or as advised by a health professional. Combine with a low-sodium diet, adequate rest and light regular exercise for best results.",
+    "warnings": "This product is not a substitute for prescribed blood pressure medication. Please consult your doctor before use if you are currently under treatment for hypertension or any heart condition."
+  },
+  {
+    "slug": "kids-health-booster-cream",
+    "name": "Kids Health Booster Cream",
+    "category": "Kids Health Booster",
+    "image": "images/live_height_weight_booster.png",
+    "gallery": [
+      "images/live_height_weight_booster.png",
+      "images/live_height_weight_booster.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2499,
+    "oldPrice": 3499,
+    "rating": 5,
+    "reviews": 58,
+    "badge": "-29%",
+    "shortDesc": "Gentle daily formula to help kids grow stronger and healthier.",
+    "description": "Kids Health Booster Cream is a gentle, herbal daily formula created to support children's overall wellness, vitality and healthy development — made with care for young, sensitive skin.",
+    "benefits": [
+      "Supports kids' overall health & vitality",
+      "Supports healthy daily development",
+      "Gentle formula, suitable for regular use",
+      "Non-greasy, easy daily application",
+      "Made with herbal, natural ingredients",
+      "Supports a balanced, active routine"
+    ],
+    "ingredients": "Gentle herbal wellness blend formulated for children. See product packaging for the full ingredient list.",
+    "howToUse": "Apply a small amount as directed on the label, once daily. Consult a pediatrician before use for children under 5 years of age.",
+    "warnings": "For external use only. Discontinue if irritation occurs. This product does not diagnose, treat or prevent any disease. Always keep out of reach of children when not in use."
+  },
+  {
+    "slug": "camstrich-oil-30",
+    "name": "Camstrich Oil 30ml",
+    "category": "Camstrich Oil",
+    "image": "images/live_camstrich_oil.png",
+    "gallery": [
+      "images/live_camstrich_oil.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1549,
+    "oldPrice": 1899,
+    "rating": 5,
+    "reviews": 96,
+    "badge": "-18%",
+    "shortDesc": "Quick comfort for muscles & joints — fast-absorbing herbal oil.",
+    "description": "Camstrich Oil is a fast-absorbing herbal oil blend made to bring quick, soothing comfort to tired muscles and stiff joints after a long day. The 30ml bottle is perfect for trying it out or for travel.",
+    "benefits": [
+      "Quick comfort for muscles & joints",
+      "Fast-absorbing, non-sticky formula",
+      "Soothing warmth on application",
+      "Great for post-activity muscle care",
+      "Herbal oil blend, easy daily massage",
+      "Compact size — ideal for travel"
+    ],
+    "ingredients": "Herbal massage-oil blend with warming botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Massage gently onto the affected area 2–3 times daily, or as needed for comfort. Avoid contact with eyes and broken skin.",
+    "warnings": "For external use only. Discontinue use if irritation occurs. Keep out of reach of children."
+  },
+  {
+    "slug": "camstrich-oil-50",
+    "name": "Camstrich Oil 50ml",
+    "category": "Camstrich Oil",
+    "image": "images/live_camstrich_oil.png",
+    "gallery": [
+      "images/live_camstrich_oil.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1949,
+    "oldPrice": 2399,
+    "rating": 5,
+    "reviews": 108,
+    "badge": "-19%",
+    "shortDesc": "Quick comfort for muscles & joints — fast-absorbing herbal oil.",
+    "description": "Camstrich Oil is a fast-absorbing herbal oil blend made to bring quick, soothing comfort to tired muscles and stiff joints after a long day. The 50ml bottle is our most popular starter size for regular use.",
+    "benefits": [
+      "Quick comfort for muscles & joints",
+      "Fast-absorbing, non-sticky formula",
+      "Soothing warmth on application",
+      "Great for post-activity muscle care",
+      "Herbal oil blend, easy daily massage",
+      "A full month of regular use"
+    ],
+    "ingredients": "Herbal massage-oil blend with warming botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Massage gently onto the affected area 2–3 times daily, or as needed for comfort. Avoid contact with eyes and broken skin.",
+    "warnings": "For external use only. Discontinue use if irritation occurs. Keep out of reach of children."
+  },
+  {
+    "slug": "camstrich-oil-100",
+    "name": "Camstrich Oil 100ml",
+    "category": "Camstrich Oil",
+    "image": "images/live_camstrich_oil.png",
+    "gallery": [
+      "images/live_camstrich_oil.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 3499,
+    "oldPrice": 4499,
+    "rating": 5,
+    "reviews": 210,
+    "badge": "Best Seller",
+    "shortDesc": "Quick comfort for muscles & joints — enhanced herbal oil blend.",
+    "description": "Camstrich Oil is a fast-absorbing herbal oil blend made to bring quick, soothing comfort to tired muscles and stiff joints after a long day. The 100ml bottle is our best-selling family size.",
+    "benefits": [
+      "Quick comfort for muscles & joints",
+      "Fast-absorbing, non-sticky formula",
+      "Soothing warmth on application",
+      "Great for post-activity muscle care",
+      "Herbal oil blend, easy daily massage",
+      "Best value for regular household use"
+    ],
+    "ingredients": "Herbal massage-oil blend with warming botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Massage gently onto the affected area 2–3 times daily, or as needed for comfort. Avoid contact with eyes and broken skin.",
+    "warnings": "For external use only. Discontinue use if irritation occurs. Keep out of reach of children."
+  },
+  {
+    "slug": "camstrich-oil-200",
+    "name": "Camstrich Oil 200ml",
+    "category": "Camstrich Oil",
+    "image": "images/live_camstrich_oil.png",
+    "gallery": [
+      "images/live_camstrich_oil.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 5999,
+    "oldPrice": 7499,
+    "rating": 5,
+    "reviews": 71,
+    "badge": "-20%",
+    "shortDesc": "Quick comfort for muscles & joints — our largest value size.",
+    "description": "Camstrich Oil is a fast-absorbing herbal oil blend made to bring quick, soothing comfort to tired muscles and stiff joints after a long day. The 200ml bottle is our largest, best-value size for long-term use.",
+    "benefits": [
+      "Quick comfort for muscles & joints",
+      "Fast-absorbing, non-sticky formula",
+      "Soothing warmth on application",
+      "Great for post-activity muscle care",
+      "Herbal oil blend, easy daily massage",
+      "Our best price-per-ml value size"
+    ],
+    "ingredients": "Herbal massage-oil blend with warming botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Massage gently onto the affected area 2–3 times daily, or as needed for comfort. Avoid contact with eyes and broken skin.",
+    "warnings": "For external use only. Discontinue use if irritation occurs. Keep out of reach of children."
+  },
+  {
+    "slug": "height-weight-booster-50",
+    "name": "Height & Weight Booster 50g",
+    "category": "Height & Weight Booster",
+    "image": "images/live_height_weight_booster.png",
+    "gallery": [
+      "images/live_height_weight_booster.png",
+      "images/live_height_weight_booster.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1549,
+    "oldPrice": 1899,
+    "rating": 5,
+    "reviews": 63,
+    "badge": "-18%",
+    "shortDesc": "Herbal & nutritional blend to support healthy height and weight growth.",
+    "description": "Height & Weight Booster is a herbal and nutritional blend formulated to support healthy growth, bone wellness and overall development during growing years. The 50g pack is a great way to start.",
+    "benefits": [
+      "Supports healthy growth & development",
+      "Supports bone health and strength",
+      "Helps fill everyday nutritional gaps",
+      "Supports active lifestyle & physical wellness",
+      "Supports natural energy and vitality",
+      "Suitable for growing teens & young adults"
+    ],
+    "ingredients": "Herbal and nutritional growth-support blend. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet, adequate sleep and regular physical activity.",
+    "warnings": "Height and growth are influenced by genetics, age, nutrition and lifestyle — results vary from person to person. This product does not diagnose, treat or prevent any disease."
+  },
+  {
+    "slug": "height-weight-booster-100",
+    "name": "Height & Weight Booster 100g",
+    "category": "Height & Weight Booster",
+    "image": "images/live_height_weight_booster.png",
+    "gallery": [
+      "images/live_height_weight_booster.png",
+      "images/live_height_weight_booster.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1949,
+    "oldPrice": 2399,
+    "rating": 5,
+    "reviews": 128,
+    "badge": "Popular",
+    "shortDesc": "Herbal & nutritional blend to support healthy height and weight growth.",
+    "description": "Height & Weight Booster is a herbal and nutritional blend formulated to support healthy growth, bone wellness and overall development during growing years. The 100g pack is our most popular size.",
+    "benefits": [
+      "Supports healthy growth & development",
+      "Supports bone health and strength",
+      "Helps fill everyday nutritional gaps",
+      "Supports active lifestyle & physical wellness",
+      "Supports natural energy and vitality",
+      "Suitable for growing teens & young adults"
+    ],
+    "ingredients": "Herbal and nutritional growth-support blend. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet, adequate sleep and regular physical activity.",
+    "warnings": "Height and growth are influenced by genetics, age, nutrition and lifestyle — results vary from person to person. This product does not diagnose, treat or prevent any disease."
+  },
+  {
+    "slug": "height-weight-booster-150",
+    "name": "Height & Weight Booster 150g",
+    "category": "Height & Weight Booster",
+    "image": "images/live_height_weight_booster.png",
+    "gallery": [
+      "images/live_height_weight_booster.png",
+      "images/live_height_weight_booster.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2799,
+    "oldPrice": 3499,
+    "rating": 5,
+    "reviews": 74,
+    "badge": "-20%",
+    "shortDesc": "Herbal & nutritional blend to support healthy height and weight growth.",
+    "description": "Height & Weight Booster is a herbal and nutritional blend formulated to support healthy growth, bone wellness and overall development during growing years. The 150g pack offers more days of consistent use.",
+    "benefits": [
+      "Supports healthy growth & development",
+      "Supports bone health and strength",
+      "Helps fill everyday nutritional gaps",
+      "Supports active lifestyle & physical wellness",
+      "Supports natural energy and vitality",
+      "Suitable for growing teens & young adults"
+    ],
+    "ingredients": "Herbal and nutritional growth-support blend. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet, adequate sleep and regular physical activity.",
+    "warnings": "Height and growth are influenced by genetics, age, nutrition and lifestyle — results vary from person to person. This product does not diagnose, treat or prevent any disease."
+  },
+  {
+    "slug": "height-weight-booster-200",
+    "name": "Height & Weight Booster 200g",
+    "category": "Height & Weight Booster",
+    "image": "images/live_height_weight_booster.png",
+    "gallery": [
+      "images/live_height_weight_booster.png",
+      "images/live_height_weight_booster.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 3999,
+    "oldPrice": 0,
+    "rating": 5,
+    "reviews": 41,
+    "badge": "New",
+    "shortDesc": "Herbal & nutritional blend — our largest growth support size.",
+    "description": "Height & Weight Booster is a herbal and nutritional blend formulated to support healthy growth, bone wellness and overall development during growing years. The 200g pack is our largest size for long-term daily use.",
+    "benefits": [
+      "Supports healthy growth & development",
+      "Supports bone health and strength",
+      "Helps fill everyday nutritional gaps",
+      "Supports active lifestyle & physical wellness",
+      "Supports natural energy and vitality",
+      "Suitable for growing teens & young adults"
+    ],
+    "ingredients": "Herbal and nutritional growth-support blend. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet, adequate sleep and regular physical activity.",
+    "warnings": "Height and growth are influenced by genetics, age, nutrition and lifestyle — results vary from person to person. This product does not diagnose, treat or prevent any disease."
+  },
+  {
+    "slug": "stomach-coolant-50",
+    "name": "Stomach Coolant 50g",
+    "category": "Stomach Coolant",
+    "image": "images/live_stomach_coolant.png",
+    "gallery": [
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1549,
+    "oldPrice": 1899,
+    "rating": 5,
+    "reviews": 66,
+    "badge": "-18%",
+    "shortDesc": "Pure herbal blend to soothe acidity and support digestion.",
+    "description": "Stomach Coolant is a pure herbal blend created to soothe acidity, heartburn and everyday digestive discomfort, helping restore a calm, balanced stomach. The 50g pack is a great way to try it.",
+    "benefits": [
+      "Soothes acidity & heartburn",
+      "Supports healthy digestion",
+      "Helps calm stomach discomfort after meals",
+      "Herbal, gentle daily formula",
+      "No harsh chemical laxatives",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal digestive-support blend with cooling botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Take as directed on the label, or as advised by a health professional, preferably after meals. Pair with light, balanced meals for best results.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Consult a physician if digestive discomfort persists or worsens."
+  },
+  {
+    "slug": "stomach-coolant-100",
+    "name": "Stomach Coolant 100g",
+    "category": "Stomach Coolant",
+    "image": "images/live_stomach_coolant.png",
+    "gallery": [
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1999,
+    "oldPrice": 2399,
+    "rating": 5,
+    "reviews": 152,
+    "badge": "Popular",
+    "shortDesc": "Pure herbal blend to soothe acidity and support digestion.",
+    "description": "Stomach Coolant is a pure herbal blend created to soothe acidity, heartburn and everyday digestive discomfort, helping restore a calm, balanced stomach. The 100g pack is our most popular size.",
+    "benefits": [
+      "Soothes acidity & heartburn",
+      "Supports healthy digestion",
+      "Helps calm stomach discomfort after meals",
+      "Herbal, gentle daily formula",
+      "No harsh chemical laxatives",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal digestive-support blend with cooling botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Take as directed on the label, or as advised by a health professional, preferably after meals. Pair with light, balanced meals for best results.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Consult a physician if digestive discomfort persists or worsens."
+  },
+  {
+    "slug": "stomach-coolant-150",
+    "name": "Stomach Coolant 150g",
+    "category": "Stomach Coolant",
+    "image": "images/live_stomach_coolant.png",
+    "gallery": [
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2799,
+    "oldPrice": 3499,
+    "rating": 5,
+    "reviews": 89,
+    "badge": "-20%",
+    "shortDesc": "Pure herbal blend to soothe acidity and support digestion.",
+    "description": "Stomach Coolant is a pure herbal blend created to soothe acidity, heartburn and everyday digestive discomfort, helping restore a calm, balanced stomach. The 150g pack means fewer refills.",
+    "benefits": [
+      "Soothes acidity & heartburn",
+      "Supports healthy digestion",
+      "Helps calm stomach discomfort after meals",
+      "Herbal, gentle daily formula",
+      "No harsh chemical laxatives",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal digestive-support blend with cooling botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Take as directed on the label, or as advised by a health professional, preferably after meals. Pair with light, balanced meals for best results.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Consult a physician if digestive discomfort persists or worsens."
+  },
+  {
+    "slug": "stomach-coolant-200",
+    "name": "Stomach Coolant 200g",
+    "category": "Stomach Coolant",
+    "image": "images/live_stomach_coolant.png",
+    "gallery": [
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png",
+      "images/live_stomach_coolant.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 3399,
+    "oldPrice": 3999,
+    "rating": 5,
+    "reviews": 77,
+    "badge": "-15%",
+    "shortDesc": "Pure herbal blend — our largest digestive-care size.",
+    "description": "Stomach Coolant is a pure herbal blend created to soothe acidity, heartburn and everyday digestive discomfort, helping restore a calm, balanced stomach. The 200g pack is our largest, best-value size.",
+    "benefits": [
+      "Soothes acidity & heartburn",
+      "Supports healthy digestion",
+      "Helps calm stomach discomfort after meals",
+      "Herbal, gentle daily formula",
+      "No harsh chemical laxatives",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal digestive-support blend with cooling botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Take as directed on the label, or as advised by a health professional, preferably after meals. Pair with light, balanced meals for best results.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Consult a physician if digestive discomfort persists or worsens."
+  },
+  {
+    "slug": "weight-loss-50",
+    "name": "Weight Loss Formula 50g",
+    "category": "Weight Loss Formula",
+    "image": "images/live_weight_loss.png",
+    "gallery": [
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1549,
+    "oldPrice": 1900,
+    "rating": 5,
+    "reviews": 55,
+    "badge": "-18%",
+    "shortDesc": "Chemical-free herbal formula to support natural, healthy weight loss.",
+    "description": "Weight Loss Formula is a chemical-free herbal blend created to support the body's natural weight-balance and metabolism as part of a healthy lifestyle. The 50g pack is a great way to get started.",
+    "benefits": [
+      "Supports natural weight balance",
+      "Supports healthy metabolism",
+      "Helps reduce bloating & sluggishness",
+      "Herbal, chemical-free formula",
+      "Complements diet & exercise routines",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal metabolism-support blend with natural botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet and regular physical activity.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Results vary from person to person. Consult your doctor if pregnant, breastfeeding, or managing a medical condition."
+  },
+  {
+    "slug": "weight-loss-100",
+    "name": "Weight Loss Formula 100g",
+    "category": "Weight Loss Formula",
+    "image": "images/live_weight_loss.png",
+    "gallery": [
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 1949,
+    "oldPrice": 2399,
+    "rating": 5,
+    "reviews": 194,
+    "badge": "Best Seller",
+    "shortDesc": "Chemical-free herbal formula to support natural, healthy weight loss.",
+    "description": "Weight Loss Formula is a chemical-free herbal blend created to support the body's natural weight-balance and metabolism as part of a healthy lifestyle. The 100g pack is our best-selling size.",
+    "benefits": [
+      "Supports natural weight balance",
+      "Supports healthy metabolism",
+      "Helps reduce bloating & sluggishness",
+      "Herbal, chemical-free formula",
+      "Complements diet & exercise routines",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal metabolism-support blend with natural botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet and regular physical activity.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Results vary from person to person. Consult your doctor if pregnant, breastfeeding, or managing a medical condition."
+  },
+  {
+    "slug": "weight-loss-150",
+    "name": "Weight Loss Formula 150g",
+    "category": "Weight Loss Formula",
+    "image": "images/live_weight_loss.png",
+    "gallery": [
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 2799,
+    "oldPrice": 3499,
+    "rating": 5,
+    "reviews": 82,
+    "badge": "-20%",
+    "shortDesc": "Chemical-free herbal formula to support natural, healthy weight loss.",
+    "description": "Weight Loss Formula is a chemical-free herbal blend created to support the body's natural weight-balance and metabolism as part of a healthy lifestyle. The 150g pack means fewer refills.",
+    "benefits": [
+      "Supports natural weight balance",
+      "Supports healthy metabolism",
+      "Helps reduce bloating & sluggishness",
+      "Herbal, chemical-free formula",
+      "Complements diet & exercise routines",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal metabolism-support blend with natural botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet and regular physical activity.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Results vary from person to person. Consult your doctor if pregnant, breastfeeding, or managing a medical condition."
+  },
+  {
+    "slug": "weight-loss-200",
+    "name": "Weight Loss Formula 200g",
+    "category": "Weight Loss Formula",
+    "image": "images/live_weight_loss.png",
+    "gallery": [
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png",
+      "images/live_weight_loss.png"
+    ],
+    "bg": "#E8F3E9",
+    "price": 3399,
+    "oldPrice": 3999,
+    "rating": 5,
+    "reviews": 67,
+    "badge": "-15%",
+    "shortDesc": "Chemical-free herbal formula — our largest value size.",
+    "description": "Weight Loss Formula is a chemical-free herbal blend created to support the body's natural weight-balance and metabolism as part of a healthy lifestyle. The 200g pack is our largest, best-value size.",
+    "benefits": [
+      "Supports natural weight balance",
+      "Supports healthy metabolism",
+      "Helps reduce bloating & sluggishness",
+      "Herbal, chemical-free formula",
+      "Complements diet & exercise routines",
+      "Easy to include in a daily routine"
+    ],
+    "ingredients": "Herbal metabolism-support blend with natural botanical extracts. See product packaging for the full ingredient list.",
+    "howToUse": "Use as directed on the label, or as advised by a health professional. Best results come with a balanced diet and regular physical activity.",
+    "warnings": "This product does not diagnose, treat or cure any disease. Results vary from person to person. Consult your doctor if pregnant, breastfeeding, or managing a medical condition."
+  }
+]

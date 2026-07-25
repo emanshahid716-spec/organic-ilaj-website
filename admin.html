@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Organic Ilaj</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { background-color: #F3F5F2; margin:0; font-family: 'Open Sans', sans-serif; }
+
+    /* ---------- Login screen ---------- */
+    .admin-login-box { max-width: 380px; margin: 100px auto; background: #fff; padding: 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+    .admin-login-box h3 { font-family:'Poppins',sans-serif; margin-bottom:16px; }
+    .admin-login-box input { width: 100%; padding: 12px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 8px; font-size:14px; }
+    .admin-login-box button { width: 100%; }
+
+    /* ---------- Dashboard layout ---------- */
+    .admin-layout { display:flex; min-height:100vh; }
+
+    .admin-sidebar { width:230px; background:#1F2A22; color:#fff; flex-shrink:0; padding: 24px 0; position:sticky; top:0; height:100vh; }
+    .admin-sidebar .brand { font-family:'Poppins',sans-serif; font-weight:700; font-size:18px; padding: 0 24px 24px; border-bottom:1px solid rgba(255,255,255,0.1); margin-bottom:16px; }
+    .admin-sidebar .brand span { display:block; font-size:12px; font-weight:400; opacity:0.6; margin-top:2px; }
+    .admin-nav-btn { display:flex; align-items:center; gap:10px; width:100%; text-align:left; background:none; border:none; color:rgba(255,255,255,0.75); padding:12px 24px; font-size:14.5px; font-weight:600; cursor:pointer; border-left:3px solid transparent; }
+    .admin-nav-btn:hover { background: rgba(255,255,255,0.06); color:#fff; }
+    .admin-nav-btn.active { background: rgba(255,255,255,0.1); color:#fff; border-left-color: #6FCF97; }
+    .admin-sidebar .logout-wrap { padding: 20px 24px 0; margin-top: 20px; border-top:1px solid rgba(255,255,255,0.1); }
+    #logout-btn { background:none; border:none; color:#FF8A80; cursor:pointer; font-weight:600; font-size:14px; padding:0; }
+
+    .admin-main { flex:1; padding: 32px 36px; max-width: 1300px; }
+    .admin-page-title { font-family:'Poppins',sans-serif; font-size:24px; font-weight:700; margin:0 0 4px; color:#1F2A22; }
+    .admin-page-sub { color:#777; font-size:14px; margin:0 0 28px; }
+
+    /* ---------- Stat cards ---------- */
+    .stat-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:18px; margin-bottom:28px; }
+    .stat-card { background:#fff; border-radius:16px; padding:20px 22px; box-shadow:0 4px 16px rgba(0,0,0,0.05); }
+    .stat-card .stat-label { font-size:13px; color:#888; font-weight:600; text-transform:uppercase; letter-spacing:0.4px; }
+    .stat-card .stat-value { font-family:'Poppins',sans-serif; font-size:28px; font-weight:700; color:#1F2A22; margin-top:6px; }
+    .stat-card .stat-icon { font-size:22px; float:right; opacity:0.8; }
+    .stat-card.accent-green .stat-value { color:#2E7D32; }
+    .stat-card.accent-gold .stat-value { color:#B8860B; }
+    .stat-card.accent-red .stat-value { color:#C62828; }
+
+    /* ---------- Panels ---------- */
+    .admin-panel { background:#fff; border-radius:16px; padding:22px 24px; box-shadow:0 4px 16px rgba(0,0,0,0.05); margin-bottom:24px; }
+    .admin-panel h4 { font-family:'Poppins',sans-serif; margin:0 0 16px; font-size:16px; }
+    .panel-row { display:grid; grid-template-columns: 1.6fr 1fr; gap:20px; align-items:start; }
+    @media (max-width: 900px) { .panel-row { grid-template-columns: 1fr; } }
+
+    /* ---------- Chart (simple SVG bar chart, no external libs) ---------- */
+    .chart-wrap { width:100%; overflow-x:auto; }
+    .chart-bar-label { font-size:10px; fill:#999; }
+    .chart-bar { fill:#4C8B5C; }
+    .chart-bar:hover { fill:#2E7D32; }
+    .chart-tooltip-value { font-size:11px; fill:#1F2A22; font-weight:600; }
+
+    /* ---------- Payment breakdown ---------- */
+    .pay-method-row { display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:1px solid #f0f0f0; }
+    .pay-method-row:last-child { border-bottom:none; }
+    .pay-method-name { font-weight:600; font-size:14px; }
+    .pay-method-count { font-size:12px; color:#888; }
+    .pay-method-revenue { font-weight:700; font-family:'Poppins',sans-serif; color:#2E7D32; }
+    .pay-bar-track { height:8px; background:#eee; border-radius:6px; margin-top:6px; overflow:hidden; }
+    .pay-bar-fill { height:100%; background:#4C8B5C; }
+
+    /* ---------- Tables ---------- */
+    .admin-table { width:100%; border-collapse:collapse; }
+    .admin-table th, .admin-table td { padding:12px 14px; text-align:left; border-bottom:1px solid #eee; font-size:13.5px; vertical-align:top; }
+    .admin-table th { background:#FAFBF9; font-size:12px; text-transform:uppercase; letter-spacing:0.3px; color:#888; }
+    .admin-table tr:hover td { background:#FAFBF9; }
+    .status-select { padding:6px 8px; border-radius:6px; border:1px solid #ccc; font-size:13px; }
+    .admin-empty { text-align:center; padding: 40px; color:#999; }
+    .filter-bar { display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap; }
+    .filter-bar select, .filter-bar input { padding:8px 12px; border-radius:8px; border:1px solid #ddd; font-size:13px; }
+
+    .badge-status { display:inline-block; padding:3px 10px; border-radius:20px; font-size:11.5px; font-weight:700; white-space:nowrap; }
+    .badge-pending{background:#FFF3CD;color:#856404;} .badge-confirmed{background:#D1ECF1;color:#0C5460;}
+    .badge-shipped{background:#D4E6F1;color:#1B4F72;} .badge-delivered{background:#D4EFDF;color:#1E8449;}
+    .badge-cancelled{background:#F5C6CB;color:#721C24;} .badge-new{background:#FFF3CD;color:#856404;}
+    .badge-read{background:#D1ECF1;color:#0C5460;} .badge-replied{background:#D4EFDF;color:#1E8449;}
+
+    .tab-page { display:none; }
+    .tab-page.active { display:block; }
+
+    .table-scroll { overflow-x:auto; }
+
+    @media (max-width: 760px) {
+      .admin-layout { flex-direction:column; }
+      .admin-sidebar { width:100%; height:auto; position:relative; padding:16px 0; }
+      .admin-nav { display:flex; overflow-x:auto; }
+      .admin-nav-btn { border-left:none; border-bottom:3px solid transparent; white-space:nowrap; }
+      .admin-nav-btn.active { border-bottom-color:#6FCF97; }
+      .admin-main { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="admin-login-screen" class="admin-login-box">
+    <h3>🌿 Organic Ilaj Admin</h3>
+    <input type="password" id="admin-password-input" placeholder="Admin password">
+    <button class="btn btn-primary" id="admin-login-btn">Log In</button>
+    <p id="admin-login-error" style="color:#D32F2F; margin-top:10px;"></p>
+  </div>
+
+  <div id="admin-dashboard" class="admin-layout" style="display:none;">
+
+    <aside class="admin-sidebar">
+      <div class="brand">🌿 Organic Ilaj<span>Admin Dashboard</span></div>
+      <nav class="admin-nav">
+        <button class="admin-nav-btn active" data-tab="overview">📊 &nbsp;Overview</button>
+        <button class="admin-nav-btn" data-tab="orders">📦 &nbsp;Orders</button>
+        <button class="admin-nav-btn" data-tab="payments">💳 &nbsp;Payments</button>
+        <button class="admin-nav-btn" data-tab="messages">✉️ &nbsp;Messages</button>
+      </nav>
+      <div class="logout-wrap">
+        <button id="logout-btn">⎋ Log Out</button>
+      </div>
+    </aside>
+
+    <main class="admin-main">
+
+      <!-- ===================== OVERVIEW ===================== -->
+      <section class="tab-page active" id="page-overview">
+        <h1 class="admin-page-title">Overview</h1>
+        <p class="admin-page-sub">A snapshot of your store's performance.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card accent-green">
+            <div class="stat-icon">💰</div>
+            <div class="stat-label">Total Revenue</div>
+            <div class="stat-value" id="stat-total-revenue">Rs. 0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📦</div>
+            <div class="stat-label">Total Orders</div>
+            <div class="stat-value" id="stat-total-orders">0</div>
+          </div>
+          <div class="stat-card accent-gold">
+            <div class="stat-icon">🧾</div>
+            <div class="stat-label">Avg. Order Value</div>
+            <div class="stat-value" id="stat-avg-order">Rs. 0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">✉️</div>
+            <div class="stat-label">New Messages</div>
+            <div class="stat-value" id="stat-new-messages">0</div>
+          </div>
+        </div>
+
+        <div class="stat-grid" style="grid-template-columns:repeat(3, 1fr);">
+          <div class="stat-card">
+            <div class="stat-label">Today's Revenue</div>
+            <div class="stat-value" id="stat-today-revenue" style="font-size:20px;">Rs. 0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Last 7 Days Revenue</div>
+            <div class="stat-value" id="stat-week-revenue" style="font-size:20px;">Rs. 0</div>
+          </div>
+          <div class="stat-card accent-red">
+            <div class="stat-label">Pending Orders</div>
+            <div class="stat-value" id="stat-pending-orders" style="font-size:20px;">0</div>
+          </div>
+        </div>
+
+        <div class="panel-row">
+          <div class="admin-panel">
+            <h4>Revenue — Last 14 Days</h4>
+            <div class="chart-wrap">
+              <svg id="revenue-chart" width="100%" height="220" viewBox="0 0 700 220" preserveAspectRatio="xMinYMin meet"></svg>
+            </div>
+          </div>
+          <div class="admin-panel">
+            <h4>Top Selling Products</h4>
+            <div id="top-products-list"></div>
+          </div>
+        </div>
+
+        <div class="admin-panel">
+          <h4>Recent Orders</h4>
+          <div class="table-scroll">
+            <table class="admin-table" id="recent-orders-table">
+              <thead><tr><th>Order ID</th><th>Customer</th><th>Total</th><th>Payment</th><th>Status</th><th>Placed</th></tr></thead>
+              <tbody id="recent-orders-tbody"></tbody>
+            </table>
+          </div>
+          <div class="admin-empty" id="recent-orders-empty" style="display:none;">No orders yet.</div>
+        </div>
+      </section>
+
+      <!-- ===================== ORDERS ===================== -->
+      <section class="tab-page" id="page-orders">
+        <h1 class="admin-page-title">Orders</h1>
+        <p class="admin-page-sub">All orders placed through the website.</p>
+
+        <div class="filter-bar">
+          <select id="order-status-filter">
+            <option value="">All Statuses</option>
+            <option value="pending">Pending</option>
+            <option value="confirmed">Confirmed</option>
+            <option value="shipped">Shipped</option>
+            <option value="delivered">Delivered</option>
+            <option value="cancelled">Cancelled</option>
+          </select>
+          <select id="order-payment-filter">
+            <option value="">All Payment Methods</option>
+            <option value="Cash on Delivery">Cash on Delivery</option>
+            <option value="Card / Online Payment">Card / Online Payment</option>
+          </select>
+          <input type="text" id="order-search-input" placeholder="Search by name, phone, order ID...">
+        </div>
+
+        <div class="admin-panel" style="padding:0; overflow:hidden;">
+          <div class="table-scroll">
+            <table class="admin-table" id="orders-table">
+              <thead>
+                <tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th><th>Status</th><th>Placed</th></tr>
+              </thead>
+              <tbody id="orders-tbody"></tbody>
+            </table>
+          </div>
+          <div class="admin-empty" id="orders-empty" style="display:none;">No orders yet.</div>
+        </div>
+      </section>
+
+      <!-- ===================== PAYMENTS ===================== -->
+      <section class="tab-page" id="page-payments">
+        <h1 class="admin-page-title">Payments</h1>
+        <p class="admin-page-sub">Revenue and breakdown by payment method.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card accent-green">
+            <div class="stat-label">Total Revenue Collected</div>
+            <div class="stat-value" id="pay-total-revenue">Rs. 0</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Paid Orders</div>
+            <div class="stat-value" id="pay-total-orders">0</div>
+          </div>
+        </div>
+
+        <div class="panel-row">
+          <div class="admin-panel">
+            <h4>Breakdown by Payment Method</h4>
+            <div id="payment-breakdown-list"></div>
+          </div>
+          <div class="admin-panel">
+            <h4>Order Status Breakdown</h4>
+            <div id="status-breakdown-list"></div>
+          </div>
+        </div>
+
+        <div class="admin-panel" style="padding:0; overflow:hidden;">
+          <h4 style="padding:22px 24px 0;">All Transactions</h4>
+          <div class="table-scroll">
+            <table class="admin-table" id="payments-table">
+              <thead><tr><th>Order ID</th><th>Customer</th><th>Payment Method</th><th>Amount</th><th>Status</th><th>Date</th></tr></thead>
+              <tbody id="payments-tbody"></tbody>
+            </table>
+          </div>
+          <div class="admin-empty" id="payments-empty" style="display:none;">No transactions yet.</div>
+        </div>
+      </section>
+
+      <!-- ===================== MESSAGES ===================== -->
+      <section class="tab-page" id="page-messages">
+        <h1 class="admin-page-title">Contact Messages</h1>
+        <p class="admin-page-sub">Messages submitted through the Contact Us form.</p>
+
+        <div class="admin-panel" style="padding:0; overflow:hidden;">
+          <div class="table-scroll">
+            <table class="admin-table" id="messages-table">
+              <thead>
+                <tr><th>Name</th><th>Email</th><th>Subject</th><th>Message</th><th>Status</th><th>Received</th></tr>
+              </thead>
+              <tbody id="messages-tbody"></tbody>
+            </table>
+          </div>
+          <div class="admin-empty" id="messages-empty" style="display:none;">No messages yet.</div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
